@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .header{
+    min-height: 120vh;
+    width: 100%;
+    background-color: rgb(31, 160, 160);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15%;
+    
+  }
+  nav img{
+    width: 150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: center;
+    transform: translate(-55px, 0px);
+    overflow: hidden;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 70px;
+    position: relative 
+  }
+  .nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f1ad1b;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+  width: 100%;
+  }
+  .text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: -5%;
+    overflow: hidden;
+  }
+  .text-box h1{
+    font-size: 40px;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white 
+  }
+  /*weather api styling*/
+  .input{
+    text-align: center;
+  }
+  input[type="text"]{
+    height: 50px;
+    width: 600px;
+    background: #e7e7e7;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  input[type="submit"]{
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+  }
+  .display{
+    text-align: center;
+  }

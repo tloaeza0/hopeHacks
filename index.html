@@ -25,9 +25,14 @@
   </header>
   <main>
     <div class="input">
-      <input type="text" class="inputValue" placeholder="Enter a city">
-      <input type="submit" value="Submit" class="button">
+      <input type="text" id="state" placeholder="Enter a state" list="states">
+      <datalist id="states"></datalist>
+      <input type="text" id="city" placeholder="Enter a city" list="cities">
+      <datalist id="cities"></datalist>
     </div>
+
+    
+
     <div class="display">
       <h1 class="names"></h1>
       <p class="desc"></p>

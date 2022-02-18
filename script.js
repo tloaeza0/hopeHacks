@@ -24,5 +24,3 @@ button.addEventListener('click',function(){
 
 .catch(err => alert('invalid search query'))
 })
-
-

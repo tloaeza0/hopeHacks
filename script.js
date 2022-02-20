@@ -1,5 +1,6 @@
 const button = document.querySelector('.button')
 const names = document.querySelector('.names')
+const names2 = document.querySelector('.names2')
 const desc = document.querySelector('.desc')
 const temp = document.querySelector('.temp')
 const apiKey = '301a67e1-6a30-415f-b3f4-c118cc060012'
@@ -51,10 +52,13 @@ city.addEventListener('change', e =>{
         .then(res => res.json())
         .then(data => {
             console.log(data.data.current.weather)
+            console.log(data.data.current.pollution)
             
             const tempF = data.data.current.weather.tp * 9 / 5 + 32
+            const airQuality = data.data.current.pollution.aqius
 
-            names.innerHTML = `The temperature in ${e.target.value} is ${tempF} degrees`
+            names.innerHTML = `The temperature in ${e.target.value} is ${tempF} degrees,`
+            names2.innerHTML = `and the Air Quality Index in ${e.target.value} is ${airQuality} `
             
         })
         .catch(err => console.log(err))

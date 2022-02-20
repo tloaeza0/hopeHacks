@@ -97,13 +97,33 @@ input[type="text"]{
   text-align: center;
 }
 
-input[type="submit"]{
-  height: 50px;
-  width: 100px;
-  background: #e7e7e7;
+/*footer styling*/
+
+footer{
+  color:black;
+  font-family:'Cinzel', serif;
+}
+.logo h6{
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 15%;
+  text-transform: uppercase;
   font-size: 20px;
-  font-weight: bold;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+}
+.icons{
+  width:100%;
+  position: absolute;
+  text-align: center;
+}
+.icons li{
+  display: inline-block;
+  margin: 1em;
+  list-style: none;
+  color:black;
+}
+footer a{
+  color:black;
+}
+footer a:hover{
+  color:rgb(31, 160, 160);
 }

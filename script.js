@@ -61,5 +61,22 @@ city.addEventListener('change', e =>{
             names2.innerHTML = `and the Air Quality Index in ${e.target.value} is ${airQuality} `
             
         })
-        .catch(err => console.log(err))
-})
+        .catch(err => console.log(err));
+});
+
+
+[
+    document.getElementById('radio1'),
+    document.getElementById('radio2'),
+    document.getElementById('radio3'),
+    document.getElementById('radio4')
+].forEach(node =>{
+    node.addEventListener('change', e => {
+        console.log(e.target.value);
+        document.querySelector('.slider').scrollTo({
+            top: 0,
+            left: 800 * Number.parseInt(e.target.value, 10),
+            behavior: 'smooth'
+        });
+    });
+});

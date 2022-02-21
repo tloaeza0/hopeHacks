@@ -13,7 +13,7 @@
   <nav>    
     <ul>
       <li><a href="index.html">HOME</a></li>
-      <li><a href="issues.html">LEARN MORE</a></li>
+      <li><a href="learnMore.html">LEARN MORE</a></li>
       <li><a href="solutions.html">SOLUTIONS</a></li>
       <li><a href="contact.html">CONTACT US</a></li>
     </ul>
@@ -21,9 +21,12 @@
   
   <header class="text-box">
     <h1>ADVANCED WEATHER DATA</h1>
-    <p>Provides weather statistics including air quality from any city</p>
+    <p>Provides weather statistics including air quality from any city.
+      <a href="issues.html">Click here</a><p2> for more information.</p2>
+    </p>
   </header>
   <main>
+    <!-- search bar & dropdown menu  -->
     <div class="input">
       <input type="text" id="state" placeholder="Enter a state" list="states">
       <datalist id="states"></datalist>
@@ -32,12 +35,44 @@
     </div>
 
     
-
+<!-- temperature data output -->
     <div class="display">
-      <h1 class="names"></h1>
-      <h2 class="names2"></h2>
+      <h1 class="names">&nbsp;</h1>
+      <h2 class="names2">&nbsp;</h2>
     </div>
   </main>
+<!-- image slider start -->
+<div class="slider-wrapper">
+  <div class="slider">
+    <div class="slide slide-0">
+      <img src="images/crowdMasks.jpg" alt="slide1">
+    </div>
+    <div class="slide slide-1">
+      <img src="images/airQualityIndex.png" alt="slide2">
+    </div>
+    <div class="slide slide-2">
+      <img src="images/smokestacks.jpeg" alt="slide3">
+    </div>
+    <div class="slide slide-3">
+      <img src="images/smogvsclear.png" alt="slide4">
+    </div>
+  </div>
+  <div class="slider-navigation">
+    <!-- image slider buttons -->
+    <input type="radio" name="radio-btn" id="radio1" value="0" checked>
+    <input type="radio" name="radio-btn" id="radio2" value="1">
+    <input type="radio" name="radio-btn" id="radio3" value="2">
+    <input type="radio" name="radio-btn" id="radio4" value="3">
+    <!-- image slider buttons end -->
+  </div>
+</div>
+  <!-- image slider end -->
+  <!-- slide image start -->
+
+  <!-- slide image end -->
+  <!-- auto navigation start -->
+
+  <!-- auto navigation end  -->
 
   <footer>
     <div class="logo">

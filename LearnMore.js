@@ -1,3 +1,6 @@
+
+
+/*--------Learn More JS---------*/
 var i = 0; 			// Start Point
 var images = [];	// Images Array
 var time = 4000;	// Time Between Switch

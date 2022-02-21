@@ -39,9 +39,9 @@ body{
 nav{
   display: flex;
   padding: 2% 6%;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
-  overflow: hidden;
+  overflow:hidden;
 }
 nav ul {
   display: flex;
@@ -51,7 +51,7 @@ nav ul {
 }
 nav ul li{
   display: inline-block;
-  padding: 8px 70px;
+  padding: 8px 50px;
 }
 nav ul li a{
   color: white;
@@ -263,26 +263,27 @@ footer a:hover{
 }
 .mobile-menu {
   position:fixed;
-  bottom: 150;
-  margin-top: 0%;
+  bottom: ;
+  margin-top:-1%;
   left: 0;
   width: 100%;
-  background: #94A8B3;
+  background: #acc1cc;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0.7rem 0rem;
-  z-index:10;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  z-index: ;
+  box-shadow: 1px 1px 1px rgba(62, 98, 100, 0.226);
 }
 .menu-item {
   text-align: center;
   color:black;
-  font-weight: bolder;
+  font-weight:;
+  font-size:1.5rem ;
 }
 .menu-item p {
   color: black;
-  font-size: 0.7rem;
-  margin-top: 0.2rem;
+  font-size: 0.4rem;
+  margin-top: 0.1rem;
   font-weight:bolder;
 }
 /*Media Queries (768px)*/

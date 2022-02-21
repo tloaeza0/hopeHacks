@@ -64,7 +64,7 @@ city.addEventListener('change', e =>{
         .catch(err => console.log(err));
 });
 
-
+//slideshow
 [
     document.getElementById('radio1'),
     document.getElementById('radio2'),

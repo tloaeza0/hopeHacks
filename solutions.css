@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Josefin+Slab:wght@100&family=Questrial&family=Spartan:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Spartan:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -181,7 +181,38 @@
 #solutionIcon6{
   color:#a836f5;
 }
+footer{
+  color:black;
+  font-family:'Cinzel', serif;
+}
+.logo h6{
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 15%;
+  text-transform: uppercase;
+  font-size: 20px;
+  
+}
 
+.icons{
+  width:100%;
+  position: absolute;
+  text-align:center;
+  
+
+}
+.icons li{
+  display: inline-block;
+  margin: 1em;
+  list-style: none;
+  color:black;
+}
+footer a{
+  color:black;
+}
+footer a:hover{
+  color:rgb(31, 160, 160);
+}
 
 
 
@@ -257,39 +288,6 @@
    .condition i{
     font-size: 40px;
    }   
-
-footer{
-    color:black;
-    font-family:'Cinzel', serif;
-}
-.logo h6{
-    text-align: center;
-    padding-top: 10px;
-    margin-top: 15%;
-    text-transform: uppercase;
-    font-size: 20px;
-    
-}
-
-.icons{
-    width:100%;
-    position: absolute;
-    margin-left: 43%;
-    
-
-}
-.icons li{
-    display: inline-block;
-    margin: 1em;
-    list-style: none;
-    color:black;
-}
-footer a{
-    color:black;
-}
-footer a:hover{
-    color:rgb(31, 160, 160);
-}
   }
     
   

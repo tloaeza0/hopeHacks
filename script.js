@@ -1,8 +1,6 @@
 const button = document.querySelector('.button')
 const names = document.querySelector('.names')
 const names2 = document.querySelector('.names2')
-const desc = document.querySelector('.desc')
-const temp = document.querySelector('.temp')
 const apiKey = '301a67e1-6a30-415f-b3f4-c118cc060012'
 
 
@@ -43,7 +41,7 @@ function fetchCities(state){
 state.addEventListener('change', e =>{
     document.getElementById('city').value = ''
     fetchCities(e.target.value)
-})
+});
 
 
 city.addEventListener('change', e =>{

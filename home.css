@@ -152,3 +152,14 @@ footer a:hover{
   width: 800px;
   height: 500px;
 }
+.slider-navigation{
+  position: absolute;
+  display: flex;
+  margin-top: 33%;
+}
+input[name="radio-btn"]:not(:last-child) {
+  margin-right: 40px;
+}
+input[name="radio-btn"] {
+  cursor: pointer;
+}

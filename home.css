@@ -165,3 +165,44 @@ input[name="radio-btn"]:not(:last-child) {
 input[name="radio-btn"] {
   cursor: pointer;
 }
+
+/* media queries */
+
+@media only screen and (max-width:680px) {
+  .nav{
+    display:none;
+  }
+}
+@media screen and (min-width: 33em) {
+  .info-grid {
+      grid-template-areas:
+      "one one"
+      "two three"
+      "five five"
+      "four four";
+  }
+}
+@media screen and (min-width: 38em) {
+  .info-grid {
+    grid-template-areas:
+     'one one'
+     'two five'
+     'three five'
+     'four four';
+  }
+}
+@media screen and (min-width: 54em) {
+  .info-grid {
+      grid-template-areas:
+      "one one two"
+      "five five five"
+      "three four four";
+  }
+}
+@media screen and (min-width: 75em) {
+  .info-grid {
+      grid-template-areas:
+      "one one two five"
+      "three four four five";
+  }
+}

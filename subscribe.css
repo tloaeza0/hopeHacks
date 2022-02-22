@@ -131,7 +131,7 @@ footer{
 .icons{
     width:100%;
     position: absolute;
-    margin-left: 43%;
+    text-align: center;
 }
 .icons li{
     display: inline-block;
@@ -160,13 +160,11 @@ footer a:hover{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0.7rem 0rem;
-    z-index: ;
     box-shadow: 1px 1px 1px rgba(62, 98, 100, 0.226);
   }
   .menu-item {
     text-align: center;
     color:black;
-    font-weight:;
     font-size:1.5rem ;
   }
   .menu-item p {

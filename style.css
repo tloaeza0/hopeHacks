@@ -97,6 +97,7 @@ width: 100%;
 h1{
    font-size: 30px;
    text-align: center;
+   color:white;
 }
 .slideshow-imgs{
   height:300px;
@@ -226,13 +227,13 @@ footer a:hover{
 }
 .mobile-menu {
   position:fixed;
-  margin-top:-1%;
+  margin-top:-12%;
   left: 0;
   width: 100%;
   background: #ACC1CC;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0.7rem 0rem;
+  padding: 0.3rem 0rem;
   box-shadow: 1px 1px 1px rgba(62, 98, 100, 0.226);
 }
 .menu-item {

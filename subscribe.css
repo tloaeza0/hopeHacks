@@ -149,22 +149,22 @@ footer a:hover{
   }
   .mobile-menu {
     position:fixed;
-    margin-top:-1%;
+    margin-top:-12%;
     left: 0;
     width: 100%;
     background: #ACC1CC;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0.7rem 0rem;
+    padding: 0.3rem 0rem;
     box-shadow: 1px 1px 1px rgba(62, 98, 100, 0.226);
   }
   .menu-item {
     text-align: center;
-    color:black;
+    color:white;
     font-size:1.5rem ;
   }
   .menu-item p {
-    color: black;
+    color:white;
     font-size: 0.4rem;
     margin-top: 0.1rem;
     font-weight:bolder;

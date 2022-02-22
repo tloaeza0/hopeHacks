@@ -165,44 +165,45 @@ input[name="radio-btn"]:not(:last-child) {
 input[name="radio-btn"] {
   cursor: pointer;
 }
-
+/*Mobile menu top of page*/
+.main-mobile-menu {
+  padding: 1.5rem 0rem;
+}
+.mobile-menu a{
+  text-decoration:none ;
+}
+.mobile-menu {
+  position:fixed;
+  margin-top:-8%;
+  left: 0;
+  width: 100%;
+  background: #ACC1CC;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0.3rem 0rem;
+  box-shadow: 1px 1px 1px rgba(62, 98, 100, 0.226);
+}
+.menu-item {
+  text-align: center;
+  color:white;
+  font-size:1.5rem ;
+}
+.menu-item p {
+  color:white;
+  font-size: 0.4rem;
+  margin-top: 0.1rem;
+  font-weight:bolder;
+}
 /* media queries */
-
+/*Media Queries (768px)*/
+@media only screen and (min-width: 768px) {
+  .main-mobile-menu,
+  .mobile-menu {
+    display: none;
+  }
+}
 @media only screen and (max-width:680px) {
   nav{
     display:none;
-  }
-}
-@media screen and (min-width: 33em) {
-  .info-grid {
-      grid-template-areas:
-      "one one"
-      "two three"
-      "five five"
-      "four four";
-  }
-}
-@media screen and (min-width: 38em) {
-  .info-grid {
-    grid-template-areas:
-     'one one'
-     'two five'
-     'three five'
-     'four four';
-  }
-}
-@media screen and (min-width: 54em) {
-  .info-grid {
-      grid-template-areas:
-      "one one two"
-      "five five five"
-      "three four four";
-  }
-}
-@media screen and (min-width: 75em) {
-  .info-grid {
-      grid-template-areas:
-      "one one two five"
-      "three four four five";
   }
 }

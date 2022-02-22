@@ -169,7 +169,7 @@ input[name="radio-btn"] {
 /* media queries */
 
 @media only screen and (max-width:680px) {
-  .nav{
+  nav{
     display:none;
   }
 }

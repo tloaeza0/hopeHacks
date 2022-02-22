@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Spartan:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Spartan', sans-serif;
   }
   body{
     background-color: #94A8B3;
@@ -132,7 +133,7 @@ footer{
 .icons{
     width:100%;
     position: absolute;
-    margin-left: 43%;
+    text-align: center;
 }
 .icons li{
     display: inline-block;
@@ -146,34 +147,43 @@ footer a{
 footer a:hover{
     color:rgb(31, 160, 160);
 }
-/* footer{
-    color:black;
-    font-family:'Cinzel', serif;
-    background-color: white;
-    width:100%;
-    height:15vh;}
-
-  .logo h6{
+.main-mobile-menu {
+    padding: 1.5rem 0rem;
+  }
+  .mobile-menu a{
+    text-decoration:none ;
+  }
+  .mobile-menu {
+    position:fixed;
+    margin-top:-1%;
+    left: 0;
+    width: 100%;
+    background: #ACC1CC;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.7rem 0rem;
+    box-shadow: 1px 1px 1px rgba(62, 98, 100, 0.226);
+  }
+  .menu-item {
     text-align: center;
-    padding-top: 10px;
-    margin-top: 1%;
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  .icons{
-    width:100%;
-    position: absolute;
-    text-align:center;
-  }
-  .icons li{
-    display: inline-block;
-    margin: 1em;
-    list-style: none;
     color:black;
+    font-size:1.5rem ;
   }
-  footer a{
-    color:black;
+  .menu-item p {
+    color: black;
+    font-size: 0.4rem;
+    margin-top: 0.1rem;
+    font-weight:bolder;
   }
-  footer a:hover{
-    color:rgb(31, 160, 160);
-  } */
+  /*Media Queries (768px)*/
+  @media only screen and (min-width: 768px) {
+    .main-mobile-menu,
+    .mobile-menu {
+      display: none;
+    }
+  }
+  @media only screen and (max-width:680px) {
+    .nav-links{
+      display:none;
+    }
+  }

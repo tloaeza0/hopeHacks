@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Josefin+Slab:wght@100&family=Questrial&family=Spartan:wght@200&display=swap');
-
-
 /*--Learn More--*/
 :root {
   --clr-primary-400: 32, 21%, 83%;
@@ -9,17 +7,12 @@
   --clr-neutral-100: 0 0% 100%;
   --clr-neutral-200: 210 46% 95%;
   --clr-neutral-300: 0 0% 81%;
-
   --ff-primary: 'Glegoo', serif;
-
   --fw-400: 400;
   --fw-700: 600;
-
- 
   --fs-400: 15px;
   --fs-500: 16px;
 }
-
 /* Box sizing rules */
 *,
 *::before,
@@ -34,7 +27,6 @@
 }
 body{
       background-color: #94A8B3;
-      
 }
 nav{
   display: flex;
@@ -69,7 +61,6 @@ nav ul li a{
 .temp{
   margin-top: 10px;
 }
-
 .header{
   min-height: 100vh;
   width: 100%;
@@ -78,8 +69,6 @@ nav ul li a{
   background-size: cover;
   position: relative;
 }
-
-
 nav{
   display: flex;
   padding: 2% 6%;
@@ -88,12 +77,11 @@ nav{
   overflow: hidden;
   
 }
-
 nav ul li::after{
   content: '';
   width: 0%;
   height: 2px;
-  background: #f1ad1b;
+  background: #F1AD1B;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -115,15 +103,11 @@ width: 100%;
 .button1:hover{
   box-shadow: 0 8px 12px 0 rgb(243, 163, 15);
 }
-
-
 /*------------------Learn More Page--------------------*/
-
 h1{
    font-size: 30px;
    text-align: center;
 }
-
 .slideshow-imgs{
   height:300px;
   width:95%;
@@ -131,17 +115,14 @@ h1{
   margin-left:auto;
   margin-right:auto;
 }
-
 /* utilities */
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
 }
-
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
 }
-
 .bg-primary-400 {
   background: hsl(var(--clr-primary-400));
 }
@@ -151,11 +132,9 @@ h1{
 .bg-secondary-500 {
   background: hsl(var(--clr-secondary-500));
 }
-
 .bg-neutral-100 {
   background: hsl(var(--clr-neutral-100));
 }
-
 .text-neutral-100 {
   color: hsl(var(--clr-neutral-100));
 }
@@ -163,9 +142,8 @@ h1{
   color: hsl(var(--clr-secondary-400));
 }
 .border-primary-400 {
-  border: 2px solid #a775f1;
+  border: 2px solid #A775F1;
 }
-
 /* components */
 .info-grid {
   display: grid;
@@ -177,19 +155,16 @@ h1{
    'three'
    'four'
    'five';
-
   padding-block: 1rem;
   width: min(95%, 90rem);
   margin-inline: auto;
 }
-
 .info {
   font-size: var(--fs-400);
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
 }
-
 .info:nth-child(1) {
   grid-area: one;
 }
@@ -205,7 +180,6 @@ h1{
 .info:nth-child(5) {
   grid-area: five;
 }
-
 @media screen and (min-width: 33em) {
   .info-grid {
       grid-template-areas:
@@ -215,18 +189,15 @@ h1{
       "four four";
   }
 }
-
 .info .title {
   font-size: var(--fs-400);
   font-weight: var(--fw-400);
   line-height: 1;
 }
-
 .info > p:first-of-type {
   font-size: var(--fs-500);
   line-height: 1.2;
 }
-
 /*-----Footer-------*/
 footer{
   color:black;
@@ -260,7 +231,6 @@ footer a:hover{
 .main-mobile-menu {
   padding: 1.5rem 0rem;
 }
-
 .mobile-menu a{
   text-decoration:none ;
 }
@@ -269,7 +239,7 @@ footer a:hover{
   margin-top:-1%;
   left: 0;
   width: 100%;
-  background: #acc1cc;
+  background: #ACC1CC;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0.7rem 0rem;
@@ -293,7 +263,6 @@ footer a:hover{
     display: none;
   }
 }
-
 @media only screen and (max-width:680px) {
   .nav-links{
     display:none;
@@ -308,7 +277,6 @@ footer a:hover{
       "four four";
   }
 }
-
 @media screen and (min-width: 38em) {
   .info-grid {
     grid-template-areas:
@@ -318,7 +286,6 @@ footer a:hover{
      'four four';
   }
 }
-
 @media screen and (min-width: 54em) {
   .info-grid {
       grid-template-areas:
@@ -327,7 +294,6 @@ footer a:hover{
       "three four four";
   }
 }
-
 @media screen and (min-width: 75em) {
   .info-grid {
       grid-template-areas:

@@ -1,68 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Spartan:wght@200&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Spartan', sans-serif;
   }
   
-  header{
-    /* min-height: 100vh; */
+  .main-mobile-menu {
+    padding: 1.5rem 0rem;
+  }
+  .mobile-menu a{
+    text-decoration:none ;
+  }
+  .mobile-menu {
+    /* position:fixed; */
+    /* bottom: ; */
+    margin-top:-1%;
+    left: 0;
     width: 100%;
-    background-color: #94A8B3;
-    
-    
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    background: #ACC1CC;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.7rem 0rem;
+    box-shadow: 1px 1px 1px rgba(62, 98, 100, 0.226);
   }
-  nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-  }
-  nav img{
-    width: 150px;
-  }
-  .nav-links{
-    flex: 1;
+  .menu-item {
     text-align: center;
-    transform: translate(-55px, 0px);
-    overflow: hidden;
+    color:white;
+    font-size:1.5rem ;
   }
-  .nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 70px;
-    position: relative
-  }
-  .nav-links ul li a{
+  .menu-item p {
     color: white;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 0.4rem;
+    margin-top: 0.1rem;
+    font-weight:bolder;
   }
-  .nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #F1AD1B;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
+  /*Media Queries (768px)*/
+  @media only screen and (min-width: 768px) {
+    .main-mobile-menu,
+    .mobile-menu {
+      display: none;
+    }
   }
-  .nav-links ul li:hover::after{
-  width: 100%;
+  @media only screen and (max-width:680px) {
+    .nav-links{
+      display:none;
+    }
   }
-
 .solutions-img{
     background: url("https://images.pexels.com/photos/221012/pexels-photo-221012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center /cover;
     width:100%;
     height:70vh;
 }
   .solutions-box{
-    
         width:100%;
         height:100%;
         max-width: 1000px;
@@ -70,9 +59,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    
   }
-
   .solutions-box h1{
     font-size: 30px;
     color: white;
@@ -97,8 +84,8 @@
   color:#787878;
   font-size: 20px;
   width:70%;
-  padding-left: 4em;   
-  padding-top: 1em; 
+  padding-left: 4em;
+  padding-top: 1em;
 }
 .solutions-text i{
   font-size: 40px;
@@ -106,20 +93,17 @@
   padding-left: 4em;
   color: #BABABA;
 }
-
 .solutions-text  a {
   text-decoration: none;
   padding-top: 2em;
   color:rgb(31, 160, 160);
-  font-family:'Glegoo', serif; 
+  font-family:'Glegoo', serif;
   padding-left: 8em;
-  
 }
  .solutions-text a:hover{
   color:#F1AD1B;
   transition: 1s;
 }
-
 .solutions-text h3{
   font-family: 'Glegoo', serif;
   color:rgb(31, 160, 160);
@@ -135,7 +119,6 @@
   width:80%;
   padding-left: 2.5em;
   text-align: center;
-  
 }
 .subheading-solution{
   text-transform: uppercase;
@@ -145,18 +128,17 @@
   margin-top: 2em;
   text-align: center;
   color:rgb(31, 160, 160);
-
 }
 .condition{
   height: 18vh;
 }
 .condition h4{
- font-family:'Glegoo', serif; 
+ font-family:'Glegoo', serif;
  font-size: 15px;
  padding-left: 1em;
 }
 .condition p{
- font-family:'Glegoo', serif; 
+ font-family:'Glegoo', serif;
  font-size: 10px;
  margin-left: 1em;
  width:87%;
@@ -196,15 +178,11 @@ footer{
   margin-top: 15%;
   text-transform: uppercase;
   font-size: 20px;
-  
 }
-
 .icons{
   width:100%;
   position: absolute;
   text-align:center;
-  
-
 }
 .icons li{
   display: inline-block;
@@ -219,9 +197,56 @@ footer a:hover{
   color:rgb(31, 160, 160);
 }
 
-
+/* media query for desktop*/
 
 @media only screen and (min-width:1024px) and (max-width:1800px){
+
+  header{
+    width: 100%;
+    background-color: #94A8B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  nav img{
+    width: 150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: center;
+    transform: translate(-55px, 0px);
+    overflow: hidden;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 70px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F1AD1B;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+  width: 100%;
+  }
     .solutions-img{
       background-attachment: fixed;
     }
@@ -231,9 +256,8 @@ footer a:hover{
       gap:1em;
       margin-top: 2em;
       background-color:  white;
-      padding: 1em;  
+      padding: 1em;
     }
-    
     .solutions-text1{
       grid-row:1/3;
       height:50vh;
@@ -242,19 +266,17 @@ footer a:hover{
       font-size: 40px;
       padding-top: 1em;
       text-align: left;
-    } 
+    }
     .solutions-text1 p{
       font-size: 20px;
-      width:70%; 
+      width:70%;
       padding-top: 1em;
-      
     }
     .solutions-text p{
       font-size: 13px;
       padding-top: 1em;
       text-align: left;
     }
-    
     .solutions-text i{
       padding-left: .5em;
     }
@@ -267,7 +289,7 @@ footer a:hover{
       text-decoration: none;
       padding-top: 2em;
       padding-left: 1.5em;
-    } 
+    }
     .airQ{
      margin-top: 2em;
      width:90%;
@@ -291,10 +313,9 @@ footer a:hover{
    .condition h5{
      font-size: 18px;
      margin-top: -5em;
-   } 
+   }
    .condition i{
     font-size: 40px;
-   }   
+   }
   }
-    
   

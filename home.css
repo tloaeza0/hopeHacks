@@ -174,7 +174,7 @@ input[name="radio-btn"] {
 }
 .mobile-menu {
   position:fixed;
-  margin-top:-8%;
+  margin-top: 12%;
   left: 0;
   width: 100%;
   background: #ACC1CC;

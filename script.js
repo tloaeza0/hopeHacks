@@ -6,7 +6,7 @@ const apiKey = 'a89b0abc-8c45-46af-a0ef-3799968787f4'
 
 
 function fetchStates(){
-    fetch(`https://api.airvisual.com/v2/states?country=USA&key=${apiKey}`)
+    fetch(`https://api.airvisual.com/v2/states?country=USA&key=${apiKey}`, {mode: 'no-cors'} )
         .then(res => res.json())
         .then(res => {
             const states = res.data.map(s => s.state)
@@ -23,7 +23,7 @@ fetchStates()
 
 
 function fetchCities(state){
-    fetch(`https://api.airvisual.com/v2/cities?state=${state}&country=USA&key=${apiKey}`)
+    fetch(`https://api.airvisual.com/v2/cities?state=${state}&country=USA&key=${apiKey}`, {mode: 'no-cors'})
         .then(res => res.json())
         .then(res => {
             const cities = res.data.map(c => c.city)
@@ -46,7 +46,7 @@ state.addEventListener('change', e =>{
 
 city.addEventListener('change', e =>{
     const state = document.getElementById('state').value
-    fetch(`https://api.airvisual.com/v2/city?city=${e.target.value}&state=${state}&country=USA&key=${apiKey}`)
+    fetch(`https://api.airvisual.com/v2/city?city=${e.target.value}&state=${state}&country=USA&key=${apiKey}`, {mode: 'no-cors'})
         .then(res => res.json())
         .then(data => {
             console.log(data.data.current.weather)
